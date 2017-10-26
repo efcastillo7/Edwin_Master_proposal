@@ -1,0 +1,961 @@
+% ---------------------------
+% Active and Passice monitoring
+% ---------------------------
+@article{mohan2011:active_passive,
+  title={Active and passive network measurements: a survey},
+  author={Mohan, Venkat and Reddy, YR Janardhan and Kalpana, K},
+  journal={International Journal of Computer Science and Information Technologies},
+  volume={2},
+  number={4},
+  pages={1372--1385},
+  year={2011}
+}
+
+@ARTICLE{Ningning_2003:probing_techniques, 
+author={Ningning Hu and P. Steenkiste}, 
+journal={IEEE Journal on Selected Areas in Communications}, 
+title={Evaluation and characterization of available bandwidth probing techniques}, 
+year={2003}, 
+volume={21}, 
+number={6}, 
+pages={879-894}, 
+keywords={Internet;channel capacity;packet switching;performance evaluation;queueing theory;telecommunication links;telecommunication traffic;Internet measurements;Pathload;available bandwidth measurement;bandwidth probing techniques;bottleneck link capacity measurement;competing network traffic;gap model;initial gap increasing method;measurement accuracy;packet pair mechanism;packet transmission rate method;probing packet gap;probing packet size;probing packet train length;queue size;simulations;single-hop network;Bandwidth;Computer science;Computerized monitoring;IP networks;Internet;Length measurement;Measurement techniques;Size measurement;Telecommunication traffic;Traffic control}, 
+doi={10.1109/JSAC.2003.814505}, 
+ISSN={0733-8716}, 
+month={Aug},}
+% ---------------------------
+% TE + DATA MINING
+% ---------------------------
+@INPROCEEDINGS{silva_2015:identification_selection_traffic, 
+author={A. S. d. Silva and C. C. Machado and R. V. Bisol and L. Z. Granville and A. Schaeffer-Filho}, 
+booktitle={2015 IEEE 14th International Symposium on Network Computing and Applications}, 
+title={Identification and Selection of Flow Features for Accurate Traffic Classification in SDN}, 
+year={2015}, 
+pages={134-141}, 
+abstract={Software-Defined Networking (SDN) aims to alleviate the limitations imposed by traditional IP networks by decoupling network tasks performed on each device in particular planes. This approach offers several benefits, such as standard communication protocols, centralized network functions, and specific network elements, for example, controller devices. Despite these benefits, there is still a lack of adequate support for performing tasks related to traffic classification, because (i) there are traffic profiles that are very similar, which makes their classification difficult (e.g., Both HTTP and DNS flows are characterized by packet bursts), (ii) Open Flow, the key SDN implementation today, only offers native flow features, such as packet and byte count, that do not describe intrinsic traffic profiles, and (iii) there is a lack of support to determine what is the optimal set of flow features to characterize different types of traffic profiles. In this paper, we introduce an architecture to collect, extend, and select flow features for traffic classification in Open Flow-based networks. The main goal of our solution is to offer an extensive set of flow features that can be analyzed and refined and to be capable of finding the optimal subset of features to classify different types of traffic flows. The experimental evaluation of our proposal shows that some features emerge as meaningful, occupying the top positions for the classification of distinct flows in different experimental scenarios.}, 
+keywords={IP networks;protocols;software defined networking;telecommunication traffic;IP networks;Open Flow based networks;SDN;centralized network functions;communication protocols;flow features identification;flow features selection;software-defined networking;traffic classification;Algorithm design and analysis;Computer architecture;Genetic algorithms;IP networks;Monitoring;Principal component analysis;Radiation detectors;Feature selection;Flow Feature;Software-Defined Networking;Traffic Classification}, 
+doi={10.1109/NCA.2015.12}, 
+month={Sept},}
+
+@INPROCEEDINGS{p_wang_2016:traffic_clasification, 
+author={P. Wang and S. C. Lin and M. Luo}, 
+booktitle={2016 IEEE International Conference on Services Computing (SCC)}, 
+title={A Framework for QoS-aware Traffic Classification Using Semi-supervised Machine Learning in SDNs}, 
+year={2016}, 
+pages={760-765}, 
+abstract={In this paper, a QoS-aware traffic classification framework for software defined networks is proposed. Instead of identifying specific applications in most of the previous work of traffic classification, our approach classifies the network traffic into different classes according to the QoS requirements, which provide the crucial information to enable the fine-grained and QoS-aware traffic engineering. The proposed framework is fully located in the network controller so that the real-time, adaptive, and accurate traffic classification can be realized by exploiting the superior computation capacity, the global visibility, and the inherent programmability of the network controller. More specifically, the proposed framework jointly exploits deep packet inspection (DPI) and semi-supervised machine learning so that accurate traffic classification can be realized, while requiring minimal communications between the network controller and the SDN switches. Based on the real Internet data set, the simulation results show the proposed classification framework can provide good performance in terms of classification accuracy and communication costs.}, 
+keywords={learning (artificial intelligence);quality of service;software defined networking;DPI;QoS aware traffic classification framework;QoS aware traffic engineering;SDN;deep packet inspection;network controller;network traffic;semisupervised machine learning;software defined networks;Classification algorithms;Control systems;Engines;Quality of service;Real-time systems;Support vector machines;Training;QoS;SDN;Semi-supervised;Traffic classification}, 
+doi={10.1109/SCC.2016.133}, 
+month={June},}
+
+@inproceedings{poupart_online_2016,
+	title = {Online flow size prediction for improved network routing},
+	doi = {10.1109/ICNP.2016.7785324},
+	abstract = {We describe an emerging application of data mining in the context of computer networks. This application concerns the problem of predicting the size of a flow and detecting elephant flows (very large flows). Flow size is a very important statistic that can be used to improve routing, load balancing and scheduling in computer networks. Flow size prediction is particularly challenging since flow patterns continuously change and predictions must be done in real time (milliseconds) to avoid delays. We describe how to formulate the problem as an online machine learning task to continuously adjust to changes in flow traffic. We evaluate the predictive nature of a set of features and the accuracy of three online predictors based on neural networks, Gaussian process regression and online Bayesian Moment Matching on three datasets of real traffic. We also demonstrate how to use such online predictors to improve routing (i.e., reduced flow completion time) in a network simulation.},
+	eventtitle = {2016 {IEEE} 24th International Conference on Network Protocols ({ICNP})},
+	pages = {1--6},
+	booktitle = {2016 {IEEE} 24th International Conference on Network Protocols ({ICNP})},
+	author = {Poupart, P. and Chen, Z. and Jaini, P. and Fung, F. and Susanto, H. and Geng, Yanhui and Chen, Li and Chen, K. and Jin, Hao},
+	date = {2016-11},
+	keywords = {important, unread},
+	file = {2016-poupart-online_flow_size_prediction_for_improved_network_routing.pdf:/Users/festradasolano/Dropbox/phd/references/TE_in_SD-DCN_using_ML/2016-poupart-online_flow_size_prediction_for_improved_network_routing.pdf:application/pdf;IEEE Xplore Abstract Record:/Users/festradasolano/Library/Application Support/Zotero/Profiles/y9ndct8q.default/zotero/storage/NG449GQZ/7785324.html:text/html}
+}
+
+
+% ---------------------------
+% SDN-BASED SOLUTIONS
+% ---------------------------
+@Article{Nucci_2005:Increasing_link_utilization,
+author="Nucci, Antonio
+and Taft, Nina
+and Thiran, Patrick
+and Zang, Hui
+and Diot, Christophe",
+title="Increasing the Link Utilization in IP over WDM Networks Using Availability as QoS",
+journal="Photonic Network Communications",
+year="2005",
+month="Jan",
+day="01",
+volume="9",
+number="1",
+pages="55--75",
+abstract="In this paper, we solve a mapping problem related to supporting two service classes that are differentiated based on their level of protection. The first class of service, called Fully Protected (FP), offers end-users a guarantee of survivability in the case of a single failure; all FP traffic is protected using either a 1:1 or 1 + 1 protection scheme at the WDM layer. The second class of service, called Best-Effort Protected (BEP), is not protected; instead restoration at the IP layer is provided. When a failure occurs, the network restores as much BEP traffic as possible, and thus BEP traffic does not receive any specific guarantees. The FP service class mimics what Internet users receive today. The BEP traffic is designed to run over the large amounts of unused bandwidth that exist in today's Internet. The motivation of this approach is to give carriers a mechanism for increasing the load carried on backbone networks without reducing the QoS received by existing customers. In order to support two such services, the logical links at the IP layer need to be carefully mapped onto primary and backup paths at the optical layer. We incorporate into our mapping problem a number of practical requirements that reflect constraints that carriers face and policies they want to enforce. For example, we allow the FP demand to be specified via a traffic matrix at the IP layer, we include an overprovisioning factor that specifies the portion of each link that must be left unused, and we incorporate a minimal fairness requirement on how the BEP traffic is allocated among connections. Our goal is to quantify how much BEP traffic can be carried in addition to the FP traffic, without impacting the protection quality of the FP traffic even in the case of failure, and without impacting the FP load. We provide two solutions, one is an optimal solution using an Integer Linear Program (ILP) model, and the other is an algorithm based on the Tabu Search (TS) methodology. Our heuristic algorithm allows us to solve this problem for large networks such as those spanning the continental US. We show that by having two such classes of service, the load on a network can be increased by a factor of 4--7 (depending upon the network). We illustrate that even with overprovisioning and fairness requirements (both of which reduce the total possible BEP load carried), we can still typically triple the total network load. We show that the location of the bottleneck can affect whether or not we see a difference in performance between 1:1 or 1 + 1 protection schemes. Our results illustrate the gain in terms of additional BEP load carried that can be obtained simply due to the upgrade of a single link. Our proposal provides carriers a new vehicle for generating revenue by extracting benefit from all the sources of unused bandwidth in networks.",
+issn="1572-8188",
+doi="10.1007/s11107-005-4531-4",
+url="https://doi.org/10.1007/s11107-005-4531-4"
+}
+% ---------------------------
+% Traditional solutions
+% ---------------------------
+@article{tcpdump,
+    title = {TcpDump},
+    url="http://www.tcpdump.org/related.html"
+}
+@article{wireshark,
+    title = {Wireshark},
+    url="http://www.wireshark.org"
+}
+@article{caida,
+    title = {CoralReef Software Suite},
+    url="http://www.caida.org/tools/measurement/coralreef/
+}
+@inproceedings{Roesch_1999:Snort,
+ author = {Roesch, Martin},
+ title = {Snort - Lightweight Intrusion Detection for Networks},
+ booktitle = {Proceedings of the 13th USENIX Conference on System Administration},
+ series = {LISA '99},
+ year = {1999},
+ location = {Seattle, Washington},
+ pages = {229--238},
+ numpages = {10},
+ url = {http://dl.acm.org/citation.cfm?id=1039834.1039864},
+ acmid = {1039864},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+@Inbook{Finamore_2010:Tstat,
+author="Finamore, A.
+and Mellia, M.
+and Meo, M.
+and Munaf{\`o}, M. M.
+and Rossi, D.",
+editor="Osipov, Evgeny
+and Kassler, Andreas
+and Bohnert, Thomas Michael
+and Masip-Bruin, Xavier",
+title="Live Traffic Monitoring with Tstat: Capabilities and Experiences",
+bookTitle="Wired/Wireless Internet Communications: 8th International Conference, WWIC 2010, Lule{\aa}, Sweden, June 1-3, 2010. Proceedings",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="290--301",
+abstract="Network monitoring has always played a key role in understanding telecommunication networks since the pioneering time of the Internet. Today, monitoring traffic has become a key element to characterize network usage and users' activities, to understand how complex applications work, to identify anomalous or malicious behaviors, etc. In this paper we present our experience in engineering and deploying Tstat, a passive monitoring tool that has been developed in the past ten years. Started as a scalable tool to continuously monitor packets that flow on a link, Tstat has evolved into a complex application that gives to network researchers and operators the possibility to derive extended and complex measurements. Tstat offers the capability to track traffic flows, it integrates advanced behavioral classifiers that identify the application that has generated a flow, and automatically derives performance indexes that allow to easily characterize both network usage and users' activity. After describing Tstat capabilities and internal design, in this paper we present some examples of measurements collected deploying Tstat at the edge of our campus network for the past years.",
+isbn="978-3-642-13315-2",
+doi="10.1007/978-3-642-13315-2_24",
+url="https://doi.org/10.1007/978-3-642-13315-2_24"
+}
+
+
+% ---------------------------
+% DATA MINING
+% ---------------------------
+%ciberscuryti
+@INPROCEEDINGS{Thuraisingham_2003:ciber, 
+author={B. Thuraisingham}, 
+booktitle={Third International Conference on Quality Software, 2003. Proceedings.}, 
+title={Data mining and cyber security}, 
+year={2003}, 
+pages={2-}, 
+keywords={computer crime;data mining;access control violations;cyber attacks;cyber security;cyber terrorism protection;data mining;pattern matching;reasoning techniques;un-authorized intrusions;Computer security;Data mining}, 
+doi={10.1109/QSIC.2003.1319078}, 
+month={Nov},}
+%economics
+@article{kim_2004:usefulness,
+  title={Usefulness of artificial neural networks for early warning system of economic crisis},
+  author={Kim, Tae Yoon and Oh, Kyong Joo and Sohn, Insuk and Hwang, Changha},
+  journal={Expert Systems with Applications},
+  volume={26},
+  number={4},
+  pages={583--590},
+  year={2004},
+  publisher={Elsevier}
+}
+@article{nielsen_2004:local,
+  title={Local empirical spectral measure of multivariate processes with long range dependence},
+  author={Nielsen, Morten {\O}rregaard},
+  journal={Stochastic Processes and Their Applications},
+  volume={109},
+  number={1},
+  pages={145--166},
+  year={2004},
+  publisher={Elsevier}
+}
+
+%Agriculture
+@article{efcastillo_2015:agriculture,
+author = {Castillo, Edwin and Fernando Gonzales, Wilmer and Lopez, Ivan and Figueroa, Apolinar and Corrales, David and Miller, Guzmán and Corrales, Juan},
+year = {2015},
+month = {06},
+pages = {9-26},
+title = {Water quality warnings based on cluster analysis in Colombian river basins},
+volume = {13},
+booktitle = {Sistemas & Telemática}
+}
+@unknown{efcastillo_2016:agriculture,
+author = {Castillo, Edwin and Corrales, David and Lasso, Emmanuel and Ledezma Espino, Agapito and Corrales, Juan},
+year = {2016},
+month = {07},
+pages = {665-683},
+title = {Data Processing for a Water Quality Detection System on Colombian Rio Piedras Basin},
+volume = {9789},
+isbn = {978-3-319-42088-2}
+}
+@article{ZHANG_2005:agriculture,
+title = "A decision tree approach modelling functional group abundance in a pasture ecosystem",
+journal = "Agriculture, Ecosystems & Environment",
+volume = "110",
+number = "3",
+pages = "279 - 288",
+year = "2005",
+issn = "0167-8809",
+doi = "https://doi.org/10.1016/j.agee.2005.04.017",
+url = "http://www.sciencedirect.com/science/article/pii/S0167880905002069",
+author = "Baisen Zhang and Ian Valentine and Peter D. Kemp",
+keywords = "Aboveground biomass",
+keywords = "Data mining",
+keywords = "GIS",
+keywords = "Hill-pasture",
+keywords = "Species abundance"
+}
+
+@book{Dua_2011:DM_ML_Cybersecurity,
+ author = {Dua, Sumeet and Du, Xian},
+ title = {Data Mining and Machine Learning in Cybersecurity},
+ year = {2011},
+ isbn = {1439839425, 9781439839423},
+ edition = {1st},
+ publisher = {Auerbach Publications},
+ address = {Boston, MA, USA},
+} 
+
+@book{Dean_2014:BD_DM_ML,
+ author = {Dean, Jared},
+ title = {Big Data, Data Mining, and Machine Learning: Value Creation for Business Leaders and Practitioners},
+ year = {2014},
+ isbn = {1502462915, 9781502462916},
+ publisher = {CreateSpace Independent Publishing Platform},
+ address = {USA},
+} 
+
+% ---------------------------
+% SOFTWARE-DEFINED NETWORKING
+% ---------------------------
+@INPROCEEDINGS{tangari_2017:decentralized_monitoring, 
+author={G. Tangari and D. Tuncer and M. Charalambides and G. Pavlou}, 
+booktitle={2017 IFIP/IEEE Symposium on Integrated Network and Service Management (IM)}, 
+title={Decentralized monitoring for large-scale Software-Defined Networks}, 
+year={2017}, 
+volume={}, 
+number={}, 
+pages={289-297}, 
+keywords={computer network management;resource allocation;software defined networking;ISP network;OpenFlow switches;SDN-based management architectures;content distribution service;decentralized monitoring;distributed management application;distributed monitoring;heterogeneous management applications;information granularity levels;large-scale software-defined networks;monitoring functionality;monitoring rates;monitoring requests;network management;network resources;resource monitoring;Instruction sets;Irrigation;Limiting;Monitoring;Network topology;Topology;Velocity measurement}, 
+doi={10.23919/INM.2017.7987291}, 
+ISSN={}, 
+month={May},}
+
+@INPROCEEDINGS{machado_2014:towards_SLA_Policy, 
+author={C. C. Machado and L. Z. Granville and A. Schaeffer-Filho and J. A. Wickboldt}, 
+booktitle={2014 IEEE 28th International Conference on Advanced Information Networking and Applications}, 
+title={Towards SLA Policy Refinement for QoS Management in Software-Defined Networking}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={397-404}, 
+keywords={computer networks;contracts;quality of service;virtualisation;PBM;QoS management;SDN;SLA policy refinement;infrastructure management;network architecture;network services;openflow controller;policy-based management;service level agreement;software-defined networking;Delays;Jitter;Manuals;Platinum;Process control;Protocols;Quality of service;management;policy;refinement;sdn}, 
+doi={10.1109/AINA.2014.148}, 
+ISSN={1550-445X}, 
+month={May},}
+
+@article{mckeown_2008:openflow,
+  title={OpenFlow: enabling innovation in campus networks},
+  author={McKeown, Nick and Anderson, Tom and Balakrishnan, Hari and Parulkar, Guru and Peterson, Larry and Rexford, Jennifer and Shenker, Scott and Turner, Jonathan},
+  journal={ACM SIGCOMM Computer Communication Review},
+  volume={38},
+  number={2},
+  pages={69--74},
+  year={2008},
+  publisher={ACM}
+}
+
+@article{ESTRADASOLANO_2017:CIM_model,
+title = "A framework for SDN integrated management based on a CIM model and a vertical management plane",
+journal = "Computer Communications",
+volume = "102",
+number = "Supplement C",
+pages = "150 - 164",
+year = "2017",
+issn = "0140-3664",
+doi = "https://doi.org/10.1016/j.comcom.2016.08.006",
+url = "http://www.sciencedirect.com/science/article/pii/S0140366416302924",
+author = "Felipe Estrada-Solano and Armando Ordonez and Lisandro Zambenedetti Granville and Oscar Mauricio Caicedo Rendon",
+keywords = "Common information model",
+keywords = "Software-defined networking",
+keywords = "Heterogeneous environments",
+keywords = "Resource characterization",
+keywords = "Configuration management",
+abstract = "Abstract The Software-Defined Networking (SDN) paradigm establishes a typical three-plane architecture (i.e., Data, Control, and Application planes) that facilitates the deployment of network functions and simplifies traditional network management tasks. However, SDN lacks an integrated or standardized framework for managing its architecture. Some investigations have addressed such shortage by proposing different solutions that tackle specific management requirements for particular SDN technology instances. This isolated approach forces network administrators to use multiple frameworks to achieve a complete SDN management that is complex and time-consuming in heterogeneous environments. In this paper, we introduce an information model based on the common information model that establishes a technology-agnostic and consistent characterization of the SDN architecture. Such information model represents the core towards building a Management Plane aimed to facilitate the integrated SDN management in heterogeneous environments. To test our information model, we developed a prototype and conducted a performance evaluation in an SDN configuration scenario that deploys different managing technologies. The obtained results provide directions that corroborate the feasibility of our approach (in terms of time-response and network traffic) for configuring heterogeneous SDNs."
+}
+
+@article{onf_2013:sdn_architecture_overview,
+  title={SDN Architecture Overview},
+  author={Stuart Bailey, Deepak Bansal, Linda Dunbar, Dave Hood, Zoltán Lajos Kis, Ben MackCrane,
+Jeff Maguire, Dan Malek, David Meyer, Manuel Paul, Sibylle Schaller, Fabian Schneider, Rob Sherwood,
+Johann Tonsing, Tina Tsou, Eve Varma},
+  journal={Open Network Foundation},
+  year={2013},
+  publisher={ONF}
+}
+
+@article{feamster_2014:road_sdn,
+ author = {Feamster, Nick and Rexford, Jennifer and Zegura, Ellen},
+ title = {The Road to SDN: An Intellectual History of Programmable Networks},
+ journal = {SIGCOMM Comput. Commun. Rev.},
+ issue_date = {April 2014},
+ volume = {44},
+ number = {2},
+ month = apr,
+ year = {2014},
+ issn = {0146-4833},
+ pages = {87--98},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2602204.2602219},
+ doi = {10.1145/2602204.2602219},
+ acmid = {2602219},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {network virtualization, programmable networking, software defined networking},
+}
+
+@inproceedings{lin_2011:survey_programmable_networks,
+ author = {Lin, Pingping and Bi, Jun and Hu, Hongyu and Feng, Tao and Jiang, Xiaoke},
+ title = {A Quick Survey on Selected Approaches for Preparing Programmable Networks},
+ booktitle = {Proceedings of the 7th Asian Internet Engineering Conference},
+ series = {AINTEC '11},
+ year = {2011},
+ isbn = {978-1-4503-1062-8},
+ location = {Bangkok, Thailand},
+ pages = {160--163},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/2089016.2089044},
+ doi = {10.1145/2089016.2089044},
+ acmid = {2089044},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {approach, documentation, programmability, resource abstraction},
+}
+
+% ===================
+% TRAFFIC ENGINEERING
+% ==================
+@article{shu_2016:traffic_measurement_management,
+  title={Traffic engineering in software-defined networking: Measurement and management},
+  author={Shu, Zhaogang and Wan, Jiafu and Lin, Jiaxiang and Wang, Shiyong and Li, Di and Rho, Seungmin and Yang, Changcai},
+  journal={IEEE Access},
+  volume={4},
+  pages={3246--3256},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{xiao_2000:ti_mpls,
+  title={Traffic Engineering with MPLS in the Internet},
+  author={Xiao, Xipeng and Hannan, Alan and Bailey, Brook and Ni, Lionel M},
+  journal={IEEE network},
+  volume={14},
+  number={2},
+  pages={28--33},
+  year={2000},
+  publisher={IEEE}
+}
+
+@ARTICLE{wang_2008:overview_routing_ti, 
+author={N. Wang and K. H. Ho and G. Pavlou and M. Howarth}, 
+journal={IEEE Communications Surveys Tutorials}, 
+title={An overview of routing optimization for internet traffic engineering}, 
+year={2008}, 
+volume={10}, 
+number={1}, 
+pages={36-56}, 
+abstract={Traffic engineering is an important mechanism for Internet network providers seeking to optimize network performance and traffic delivery. Routing optimization plays a key role in traffic engineering, finding efficient routes so as to achieve the desired network performance. In this survey we review Internet traffic engineering from the perspective of routing optimization. A taxonomy of routing algorithms in the literature is provided, dating from the advent of the TE concept in the late 1990s. We classify the algorithms into multiple dimensions: unicast/multicast, intra-/inter- domain, IP-/MPLS-based and offline/online TE schemes. In addition, we investigate some important traffic engineering issues, including robustness, TE interactions, and interoperability with overlay selfish routing. In addition to a review of existing solutions, we also point out some challenges in TE operation and important issues that are worthy of investigation in future research activities.}, 
+keywords={Internet;optimisation;reviews;telecommunication network routing;telecommunication traffic;traffic engineering computing;IP-based scheme;Internet;MPLS-based scheme;interdomain algorithm;intradomain algorithm;multicast algorithm;network providers;offline traffic engineering scheme;online traffic engineering scheme;overlay selfish routing;routing algorithms;routing optimization;traffic delivery;traffic engineering;unicast algorithm;Communication system traffic control;IP networks;Internet;Multicast algorithms;Robustness;Routing;Taxonomy;Telecommunication traffic;Tellurium;Unicast}, 
+doi={10.1109/COMST.2008.4483669}, 
+ISSN={1553-877X}, 
+month={First},}
+
+@techreport{awduche_2002:overview_ti,
+  title={Overview and principles of Internet traffic engineering},
+  author={Awduche, Daniel and Chiu, Angela and Elwalid, Anwar and Widjaja, Indra and Xiao, XiPeng},
+  year={2002}
+}
+
+@ARTICLE{smith_2011:nr_systematic_approach, 
+author={P. Smith and D. Hutchison and J. P. G. Sterbenz and M. Schöller and A. Fessi and M. Karaliopoulos and C. Lac and B. Plattner}, 
+journal={IEEE Communications Magazine}, 
+title={Network resilience: a systematic approach}, 
+year={2011}, 
+volume={49}, 
+number={7}, 
+pages={88-97}, 
+abstract={The cost of failures within communication networks is significant and will only increase as their reach further extends into the way our society functions. Some aspects of network resilience, such as the application of fault-tolerant systems techniques to optical switching, have been studied and applied to great effect. However, networks - and the Internet in particular - are still vulnerable to malicious attacks, human mistakes such as misconfigurations, and a range of environmental challenges. We argue that this is, in part, due to a lack of a holistic view of the resilience problem, leading to inappropriate and difficult-to-manage solutions. In this article, we present a systematic approach to building resilient networked systems. We first study fundamental elements at the framework level such as metrics, policies, and information sensing mechanisms. Their understanding drives the design of a distributed multilevel architecture that lets the network defend itself against, detect, and dynamically respond to challenges. We then use a concrete case study to show how the framework and mechanisms we have developed can be applied to enhance resilience.}, 
+keywords={computer network reliability;telecommunication network topology;communication networks;distributed multilevel architecture;human mistakes;network resilience;Jitter;Network topology;Real time systems;Resilience;Systematics;Telecommunication network management}, 
+doi={10.1109/MCOM.2011.5936160}, 
+ISSN={0163-6804}, 
+month={July},}
+
+% =================
+% PROBLEM STATEMENT
+% =================
+@Inbook{Tootoonchian_2010:opentm,
+author="Tootoonchian, Amin
+and Ghobadi, Monia
+and Ganjali, Yashar",
+editor="Krishnamurthy, Arvind
+and Plattner, Bernhard",
+title="OpenTM: Traffic Matrix Estimator for OpenFlow Networks",
+bookTitle="Passive and Active Measurement: 11th International Conference, PAM 2010, Zurich, Switzerland, April 7-9, 2010. Proceedings",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="201--210",
+abstract="In this paper we present OpenTM, a traffic matrix estimation system for OpenFlow networks. OpenTM uses built-in features provided in OpenFlow switches to directly and accurately measure the traffic matrix with a low overhead. Additionally, OpenTM uses the routing information learned from the OpenFlow controller to intelligently choose the switches from which to obtain flow statistics, thus reducing the load on switching elements. We explore several algorithms for choosing which switches to query, and demonstrate that there is a trade-off between accuracy of measurements, and the worst case maximum load on individual switches, i.e., the perfect load balancing scheme sometimes results in the worst estimate, and the best estimation can lead to worst case load distribution among switches. We show that a non-uniform distribution querying strategy that tends to query switches closer to the destination with a higher probability has a better performance compared to the uniform schemes. Our test-bed experiments show that for a stationary traffic matrix OpenTM normally converges within ten queries which is considerably faster than existing traffic matrix estimation techniques for traditional IP networks.",
+isbn="978-3-642-12334-4",
+doi="10.1007/978-3-642-12334-4_21",
+url="https://doi.org/10.1007/978-3-642-12334-4_21"
+}
+
+@inproceedings {minlan_2013:OpenSketch,
+author = {Minlan Yu and Lavanya Jose and Rui Miao},
+title = {Software Defined Traffic Measurement with OpenSketch},
+booktitle = {Presented as part of the 10th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 13)},
+year = {2013},
+isbn = {978-1-931971-00-3},
+address = {Lombard, IL},
+pages = {29--42},
+url = {https://www.usenix.org/conference/nsdi13/technical-sessions/presentation/yu},
+publisher = {{USENIX}},
+}
+
+@inproceedings{rothenberg_2012:revisiting,
+  title={Revisiting routing control platforms with the eyes and muscles of software-defined networking},
+  author={Rothenberg, Christian Esteve and Nascimento, Marcelo Ribeiro and Salvador, Marcos Rogerio and Corr{\^e}a, Carlos Nilton Araujo and Cunha de Lucena, Sidney and Raszuk, Robert},
+  booktitle={Proceedings of the first workshop on Hot topics in software defined networks},
+  pages={13--18},
+  year={2012},
+  organization={ACM}
+}
+
+@inproceedings{benson_2011:microte,
+  title={MicroTE: Fine grained traffic engineering for data centers},
+  author={Benson, Theophilus and Anand, Ashok and Akella, Aditya and Zhang, Ming},
+  booktitle={Proceedings of the Seventh COnference on emerging Networking EXperiments and Technologies},
+  pages={8},
+  year={2011},
+  organization={ACM}
+}
+
+@INPROCEEDINGS{d_li_2014:high_a_nnc, 
+author={D. Li and L. Ruan and L. Xiao and M. Zhu and W. Duan and Y. Zhou and M. Chen and Y. Xia and M. Zhu}, 
+booktitle={Proceeding of IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks 2014}, 
+title={High availability for Non-stop network controller}, 
+year={2014}, 
+pages={1-5}, 
+abstract={Network controller is the core of the OpenFlow-Based Software-Defined Networks (SDN). High availability of network controller is an urgent need objectively. The appearance of controller instance fault should not be perceived by data plane. During the fault recovery, OpenFlow messages, especially asynchronous message from data plane, should not be discarded. Otherwise the control platform would hold the outdated network status. This is an interesting problem which we call Asynchronous Message Discard (ASMD) trouble. This paper proposes a Non-stop network controller (NSNC). It can troubleshoot the ASMD problem based on highly available TCP (HA-TCP) technology. During the fault recovery on distributed control platform, we want to elect the optimal controller to take over the network devices managed by the failed controller instance. We analyses the minimum metrics set for controller election. The view of this paper is verified on Floodlight controller. Experiments show that when the controller instance fails, asynchronous messages from switch will not be discarded, and using HA-TCP only adds negligible overhead to throughput and latency. We test the performance of election algorithm based on Mininet. Currently, there is only a theoretical analysis of metrics related to the election. We will test the validity of the election strategy in a real scenario as part of our future work.}, 
+keywords={computer networks;distributed control;optimal control;ASMD;Floodlight controller;HA-TCP technology;NSNC;OpenFlow messages;SDN;asynchronous message discard;asynchronous messages;data plane;distributed control platform;election algorithm;network devices;non stop network controller;openflow based software defined networks;optimal controller;outdated network status;Availability;Fault tolerance;Fault tolerant systems;Nominations and elections;Protocols;Switches;Controller Election;Fault Tolerance;High Availability;OpenFlow;Software Defined Networking(SDN)}, 
+doi={10.1109/WoWMoM.2014.6918986}, 
+month={June},}
+
+@inproceedings{Ros_2014:FNS,
+ author = {Ros, Francisco Javier and Ruiz, Pedro Miguel},
+ title = {Five Nines of Southbound Reliability in Software-defined Networks},
+ booktitle = {Proceedings of the Third Workshop on Hot Topics in Software Defined Networking},
+ series = {HotSDN '14},
+ year = {2014},
+ isbn = {978-1-4503-2989-7},
+ location = {Chicago, Illinois, USA},
+ pages = {31--36},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2620728.2620752},
+ doi = {10.1145/2620728.2620752},
+ acmid = {2620752},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {controller placement, fault tolerance, software-defined networks, southbound reliability},
+} 
+
+@article{zhou_2014:method_lb_sdn,
+  title={A method for load balancing based on software defined network},
+  author={Zhou, Yuanhao and Ruan, Li and Xiao, Limin and Liu, Rui},
+  journal={Advanced Science and Technology Letters},
+  volume={45},
+  pages={43--48},
+  year={2014}
+}
+
+@INPROCEEDINGS{y_hu_2012:balance_flow, 
+author={Y. Hu and W. Wang and X. Gong and X. Que and S. Cheng}, 
+booktitle={2012 IEEE 2nd International Conference on Cloud Computing and Intelligence Systems}, 
+title={BalanceFlow: Controller load balancing for OpenFlow networks}, 
+year={2012}, 
+volume={02}, 
+pages={780-785}, 
+abstract={In the discussion about Future Internet, Software-Defined Networking (SDN), enabled by OpenFlow, is currently seen as one of the most promising paradigm. While the availability and scalability concerns rises as a single controller could be alleviated by using replicate or distributed controllers, there lacks a flexible mechanism to allow controller load balancing. This paper proposes BalanceFlow, a controller load balancing architecture for OpenFlow networks. By utilizing CONTROLLER X action extension for OpenFlow switches and cross-controller communication, one of the controllers, called “super controller”, can flexibly tune the flow-requests handled by each controller, without introducing unacceptable propagation latencies. Experiments based on real topology show that BalanceFlow can adjust the load of each controller dynamically.}, 
+keywords={Internet;resource allocation;telecommunication congestion control;wide area networks;BalanceFlow;CONTROLLER X action;OpenFlow cross-controller communication;OpenFlow networks;OpenFlow switches;controller load balancing architecture;flow-requests flexibility tuning;software-defined networking;super controller;Control systems;Delays;IP networks;Internet;Load management;Partitioning algorithms;Resource management;Future Internet;Load balancing;OpenFlow;Scalability;Software-defined networking}, 
+doi={10.1109/CCIS.2012.6664282}, 
+ISSN={2376-5933}, 
+month={Oct},}
+
+@inproceedings{hassasYeganeh_2012:kandoo,
+ author = {Hassas Yeganeh, Soheil and Ganjali, Yashar},
+ title = {Kandoo: A Framework for Efficient and Scalable Offloading of Control Applications},
+ booktitle = {Proceedings of the First Workshop on Hot Topics in Software Defined Networks},
+ series = {HotSDN '12},
+ year = {2012},
+ isbn = {978-1-4503-1477-0},
+ location = {Helsinki, Finland},
+ pages = {19--24},
+ numpages = {6},
+ url = {http://doi.acm.org/10.1145/2342441.2342446},
+ doi = {10.1145/2342441.2342446},
+ acmid = {2342446},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {data center networks, distributed control plane, software-defined networks},
+} 
+
+@INPROCEEDINGS{staessens_2011:sdn_mcg, 
+author={D. Staessens and S. Sharma and D. Colle and M. Pickavet and P. Demeester}, 
+booktitle={2011 18th IEEE Workshop on Local Metropolitan Area Networks (LANMAN)}, 
+title={Software defined networking: Meeting carrier grade requirements}, 
+year={2011}, 
+pages={1-6}, 
+abstract={Software Defined Networking is a networking paradigm which allows network operators to manage networking elements using software running on an external server. This is accomplished by a split in the architecture between the forwarding element and the control element. Two technologies which allow this split for packet networks are For CES and Openflow. We present energy efficiency and resilience aspects of carrier grade networks which can be met by Openflow. We implement flow restoration and run extensive experiments in an emulated carrier grade network. We show that Openflow can restore traffic quite fast, but its dependency on a centralized controller means that it will be hard to achieve 50 ms restoration in large networks serving many flows. In order to achieve 50 ms recovery, protection will be required in carrier grade networks.}, 
+keywords={computer networks;software architecture;software radio;ForCES;Openflow;carrier grade requirement;centralized controller;flow restoration;network operator;network serving;packet network;resilience aspect;software defined networking;Hardware;Network topology;Power demand;Servers;Software;Switches;Energy Efficiency;Openflow;Restoration}, 
+doi={10.1109/LANMAN.2011.6076935}, 
+ISSN={1944-0367}, 
+month={Oct},}
+
+@article{sharma_2013:of_mcrr,
+title = "OpenFlow: Meeting carrier-grade recovery requirements",
+journal = "Computer Communications",
+volume = "36",
+number = "6",
+pages = "656 - 665",
+year = "2013",
+note = "Reliable Network-based Services",
+issn = "0140-3664",
+doi = "http://dx.doi.org/10.1016/j.comcom.2012.09.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0140366412003349",
+author = "Sachin Sharma and Dimitri Staessens and Didier Colle and Mario Pickavet and Piet Demeester",
+keywords = "Carrier-grade",
+keywords = "OpenFlow",
+keywords = "Protection",
+keywords = "Restoration",
+abstract = "OpenFlow, initially launched as a technology-enabling network and application experimentation in a campus network, has a disruptive potential in designing a flexible network, fostering innovation, reducing complexity and delivering the right economics. This paper focuses on fault tolerance of OpenFlow to deploy it in carrier-grade networks. The carrier-grade network has a strict requirement that the network should recover from the failure within a 50ms interval. We apply two well-known recovery mechanisms to OpenFlow networks: restoration and protection, and run extensive emulation experiments. In OpenFlow, the controlling software is moved to one or more hardware modules (controllers) which can control many switches. For fast failure recovery, the controller must notify all the affected switches about the recovery action within ms interval. This leads to a significant load on the controller. We show that OpenFlow may not be able to achieve failure recovery within a 50ms interval in this situation. We add the recovery action in the switches themselves so that the switches can do recovery without contacting the controller. We show that this approach can achieve recovery within 50ms in a large-scale network serving many flows."
+}
+
+@INPROCEEDINGS{sharma_2011:effr_of, 
+author={S. Sharma and D. Staessens and D. Colle and M. Pickavet and P. Demeester}, 
+booktitle={2011 8th International Workshop on the Design of Reliable Communication Networks (DRCN)}, 
+title={Enabling fast failure recovery in OpenFlow networks}, 
+year={2011}, 
+pages={164-171}, 
+abstract={OpenFlow is a novel technology designed at Stanford University which aims at decoupling the controller software from the forwarding hardware of a router or switch. The OpenFlow concept is based on the approach that the forwarding information base (FIB) of a switch can be programmed via a controller which resides at a separate hardware. The goal is to provide a standardized open management interface to the forwarding hardware of a router or switch. The aim of a project SPARC “SPlit ARchitecture Carrier grade networks” is to deploy OpenFlow in carrier grade networks. Reliability is a major issue to deploy OpenFlow in this networks. This work proposes the addition of a fast restoration mechanism in OpenFlow and evaluates the performance by comparing the switchover time and packet loss to existing restoration options in a current OpenFlow implementation.}, 
+keywords={telecommunication network reliability;telecommunication network routing;OpenFlow concept;OpenFlow deployment;OpenFlow implementation;OpenFlow network;Stanford University;controller software;fast failure recovery;fast restoration mechanism;forwarding hardware;forwarding information base;open management interface;packet loss;project SPARC;split architecture carrier grade network;Aging;Network topology;Protocols;Routing;Switches;Topology;Carrier Grade Networks;OpenFlow;Protection;Restoration}, 
+doi={10.1109/DRCN.2011.6076899}, 
+month={Oct},}
+
+@ARTICLE{sgambelluri_2013:of_bsp, 
+author={A. Sgambelluri and A. Giorgetti and F. Cugini and F. Paolucci and P. Castoldi}, 
+journal={IEEE/OSA Journal of Optical Communications and Networking}, 
+title={OpenFlow-based segment protection in Ethernet networks}, 
+year={2013}, 
+volume={5}, 
+number={9}, 
+pages={1066-1075}, 
+abstract={Metro and carrier-grade Ethernet networks, as well as industrial area networks and specific local area networks (LANs), have to guarantee fast resiliency upon network failure. However, the current OpenFlow architecture, originally designed for LANs, does not include effective mechanisms for fast resiliency. In this paper, the OpenFlow architecture is enhanced to support segment protection in Ethernet-based networks. Novel mechanisms have been specifically introduced to maintain working and backup flows at different priorities and to guarantee effective network resource utilization when the failed link is recovered. Emulation and experimental demonstration implementation results show that the proposed architecture avoids both the utilization of a full-state controller and the intervention of the controller upon failure, thus guaranteeing a recovery time only due to the failure detection time, i.e., a few tens of milliseconds within the considered scenario.}, 
+keywords={computer network reliability;local area networks;telecommunication links;LAN;OpenFlow architecture;OpenFlow-based segment protection;carrier-grade Ethernet network;failure detection time;industrial area network;local area network;metro network;network resource utilization;Computer architecture;Optical switches;Optimized production technology;Ports (Computers);Topology;Ethernet;OpenFlow;Recovery;Segment protection;Software-defined networking (SDN)}, 
+doi={10.1364/JOCN.5.001066}, 
+ISSN={1943-0620}, 
+month={Sept},}
+
+@inproceedings{Jain_2013:BEG,
+ author = {Jain, Sushant and Kumar, Alok and Mandal, Subhasree and Ong, Joon and Poutievski, Leon and Singh, Arjun and Venkata, Subbaiah and Wanderer, Jim and Zhou, Junlan and Zhu, Min and Zolla, Jon and H\"{o}lzle, Urs and Stuart, Stephen and Vahdat, Amin},
+ title = {B4: Experience with a Globally-deployed Software Defined Wan},
+ booktitle = {Proceedings of the ACM SIGCOMM 2013 Conference on SIGCOMM},
+ series = {SIGCOMM '13},
+ year = {2013},
+ isbn = {978-1-4503-2056-6},
+ location = {Hong Kong, China},
+ pages = {3--14},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2486001.2486019},
+ doi = {10.1145/2486001.2486019},
+ acmid = {2486019},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {centralized traffic engineering, openflow, routing, software- defined networking, wide-area networks},
+} 
+
+
+@inproceedings{Hong_2013:AHU,
+ author = {Hong, Chi-Yao and Kandula, Srikanth and Mahajan, Ratul and Zhang, Ming and Gill, Vijay and Nanduri, Mohan and Wattenhofer, Roger},
+ title = {Achieving High Utilization with Software-driven WAN},
+ booktitle = {Proceedings of the ACM SIGCOMM 2013 Conference on SIGCOMM},
+ series = {SIGCOMM '13},
+ year = {2013},
+ isbn = {978-1-4503-2056-6},
+ location = {Hong Kong, China},
+ pages = {15--26},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2486001.2486012},
+ doi = {10.1145/2486001.2486012},
+ acmid = {2486012},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {inter-dc wan, software-defined networking},
+} 
+
+@Inbook{Yu_2013:flow_sense,
+author="Yu, Curtis
+and Lumezanu, Cristian
+and Zhang, Yueping
+and Singh, Vishal
+and Jiang, Guofei
+and Madhyastha, Harsha V.",
+editor="Roughan, Matthew
+and Chang, Rocky",
+title="FlowSense: Monitoring Network Utilization with Zero Measurement Cost",
+bookTitle="Passive and Active Measurement: 14th International Conference, PAM 2013, Hong Kong, China, March 18-19, 2013. Proceedings",
+year="2013",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="31--41",
+abstract="Flow-based programmable networks must continuously monitor performance metrics, such as link utilization, in order to quickly adapt forwarding rules in response to changes in workload. However, existing monitoring solutions either require special instrumentation of the network or impose significant measurement overhead.",
+isbn="978-3-642-36516-4",
+doi="10.1007/978-3-642-36516-4_4",
+url="https://doi.org/10.1007/978-3-642-36516-4_4"
+}
+
+@Inbook{tootoonchian_2010:traffic_matrix_estimaror_of,
+author="Tootoonchian, Amin
+and Ghobadi, Monia
+and Ganjali, Yashar",
+editor="Krishnamurthy, Arvind
+and Plattner, Bernhard",
+title="OpenTM: Traffic Matrix Estimator for OpenFlow Networks",
+bookTitle="Passive and Active Measurement: 11th International Conference, PAM 2010, Zurich, Switzerland, April 7-9, 2010. Proceedings",
+year="2010",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="201--210",
+abstract="In this paper we present OpenTM, a traffic matrix estimation system for OpenFlow networks. OpenTM uses built-in features provided in OpenFlow switches to directly and accurately measure the traffic matrix with a low overhead. Additionally, OpenTM uses the routing information learned from the OpenFlow controller to intelligently choose the switches from which to obtain flow statistics, thus reducing the load on switching elements. We explore several algorithms for choosing which switches to query, and demonstrate that there is a trade-off between accuracy of measurements, and the worst case maximum load on individual switches, i.e., the perfect load balancing scheme sometimes results in the worst estimate, and the best estimation can lead to worst case load distribution among switches. We show that a non-uniform distribution querying strategy that tends to query switches closer to the destination with a higher probability has a better performance compared to the uniform schemes. Our test-bed experiments show that for a stationary traffic matrix OpenTM normally converges within ten queries which is considerably faster than existing traffic matrix estimation techniques for traditional IP networks.",
+isbn="978-3-642-12334-4",
+doi="10.1007/978-3-642-12334-4_21",
+url="https://doi.org/10.1007/978-3-642-12334-4_21"
+}
+
+@inproceedings{jose_2011:online,
+  title={Online Measurement of Large Traffic Aggregates on Commodity Switches.},
+  author={Jose, Lavanya and Yu, Minlan and Rexford, Jennifer}
+}
+
+@INPROCEEDINGS{Dusi_2014:reactive_sdn, 
+author={M. Dusi and R. Bifulco and F. Gringoli and F. Schneider}, 
+booktitle={2014 International Wireless Communications and Mobile Computing Conference (IWCMC)}, 
+title={Reactive logic in software-defined networking: Measuring flow-table requirements}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={340-345}, 
+keywords={software radio;telecommunication traffic;SDN controllers;access network scenarios;core network scenarios;flow-table requirements;reactive flow configuration;reactive logic;software-defined networking;traffic engineering flexibility;traffic traces;Ports (Computers);Size measurement;Switches;Network communications;Software-Defined-Networking;network measurements}, 
+doi={10.1109/IWCMC.2014.6906380}, 
+ISSN={2376-6492}, 
+month={Aug},}
+
+@Article{Sun_2015:HONE,
+author="Sun, Peng
+and Yu, Minlan
+and Freedman, Michael J.
+and Rexford, Jennifer
+and Walker, David",
+title="HONE: Joint Host-Network Traffic Management in Software-Defined Networks",
+journal="Journal of Network and Systems Management",
+year="2015",
+month="Apr",
+day="01",
+volume="23",
+number="2",
+pages="374--399",
+abstract="Applications running in modern datacenters interact with the underlying network in complex ways, making administrators run multiple traffic management tasks to tune the system. However, today's traffic management solutions are limited by an artificial division between the hosts and the network. While network devices only have knowledge of the network layer, the hosts can provide more visibility into how applications interact with the network. This paper proposes to extend the scope of traffic management to the end-host network stack. We present a software-defined networking platform for joint HOst-NEtwork (HONE) traffic management. HONE presents a uniform view of a diverse collection of measurement data, minimizes measurement overhead by performing lazy materialization of fine-grained statistics, and scales the analysis by processing data locally on the end hosts. HONE offers a simple and expressive programming framework for network and service administrators. We evaluate HONE by implementing several canonical traffic management applications, measuring its efficiency with micro-benchmarks, and demonstrating its scalability with larger experiments on Amazon EC2.",
+issn="1573-7705",
+doi="10.1007/s10922-014-9321-9",
+url="https://doi.org/10.1007/s10922-014-9321-9"
+}
+
+@INPROCEEDINGS{chowdhury_2014:payless, 
+author={S. R. Chowdhury and M. F. Bari and R. Ahmed and R. Boutaba}, 
+booktitle={2014 IEEE Network Operations and Management Symposium (NOMS)}, 
+title={PayLess: A low cost network monitoring framework for Software Defined Networks}, 
+year={2014}, 
+pages={1-9}, 
+abstract={Software Defined Networking promises to simplify network management tasks by separating the control plane (a central controller) from the data plane (switches). OpenFlow has emerged as the de facto standard for communication between the controller and switches. Apart from providing flow control and communication interfaces, OpenFlow provides a flow level statistics collection mechanism from the data plane. It exposes a high level interface for per flow and aggregate statistics collection. Network applications can use this high level interface to monitor network status without being concerned about the low level details. In order to keep the switch design simple, this statistics collection mechanism is implemented as a pull-based service, i.e. network applications and in turn the controller has to periodically query the switches about flow statistics. The frequency of polling the switches determines monitoring accuracy and network overhead. In this paper, we focus on this trade-off between monitoring accuracy, timeliness and network overhead. We propose PayLess - a monitoring framework for SDN. PayLess provides a flexible RESTful API for flow statistics collection at different aggregation levels. It uses an adaptive statistics collection algorithm that delivers highly accurate information in real-time without incurring significant network overhead. We utilize the Floodlight controller's API to implement the proposed monitoring framework. The effectiveness of our solution is demonstrated through emulations in Mininet.}, 
+keywords={Accuracy;Adaptive systems;Control systems;IP networks;Measurement;Monitoring;Ports (Computers)}, 
+doi={10.1109/NOMS.2014.6838227}, 
+ISSN={1542-1201}, 
+month={May},}
+
+@INPROCEEDINGS{van_2014:OpenNetMon, 
+author={N. L. M. van Adrichem and C. Doerr and F. A. Kuipers}, 
+booktitle={2014 IEEE Network Operations and Management Symposium (NOMS)}, 
+title={OpenNetMon: Network monitoring in OpenFlow Software-Defined Networks}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={1-8}, 
+keywords={computer network performance evaluation;software radio;OpenFlow software-defined networks;OpenNetMon:;QoS parameters;aggregated WAN links;fine-grained traffic engineering;network monitoring;variable bit-rate video stream;Bandwidth;Control systems;Delays;Monitoring;Packet loss;Throughput}, 
+doi={10.1109/NOMS.2014.6838228}, 
+ISSN={1542-1201}, 
+month={May},}
+
+@INPROCEEDINGS{suh_2014:OpenSample, 
+author={J. Suh and T. T. Kwon and C. Dixon and W. Felter and J. Carter}, 
+booktitle={2014 IEEE 34th International Conference on Distributed Computing Systems}, 
+title={OpenSample: A Low-Latency, Sampling-Based Measurement Platform for Commodity SDN}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={228-237}, 
+keywords={computer networks;program control structures;telecommunication network routing;telecommunication traffic;Floodlight open flow controller;OpenSample;SDN environment;commodity SDN;commodity switches;control loops;low-latency sampling-based network measurement platform;near-real-time measurements;network controller;network load;network monitoring;polling-based approaches;sFlow packet sampling;software-defined networks;static equal-cost multipath routing;throughput improvement;traffic engineering;Control systems;Maximum likelihood estimation;Monitoring;Network topology;Ports (Computers);Radiation detectors;Throughput;Data Center;Measurement;Packet Sampling;Software Defined Networking;Traffic Engineering;sFlow}, 
+doi={10.1109/ICDCS.2014.31}, 
+ISSN={1063-6927}, 
+month={June},}
+
+@INPROCEEDINGS{raumer_2014:monsamp, 
+author={D. Raumer and L. Schwaighofer and G. Carle}, 
+booktitle={2014 Federated Conference on Computer Science and Information Systems}, 
+title={MonSamp: A distributed SDN application for QoS monitoring}, 
+year={2014}, 
+volume={}, 
+number={}, 
+pages={961-968}, 
+keywords={application program interfaces;computer networks;distributed algorithms;quality of service;software engineering;telecommunication traffic;MonSamp;OpenFlow SDN instantiation;OpenFlow software defined networking instantiation;QoS monitoring;SDN northbound API;distributed SDN application;flow sampling;network traffic monitoring;quality of service monitoring;Control systems;Monitoring;Performance evaluation;Protocols;Prototypes;Quality of service;Flow Sampling;Northbound API;QoS Monitoring;SDN;SDN Application}, 
+doi={10.15439/2014F175}, 
+ISSN={}, 
+month={Sept},}
+
+@inproceedings{Cisco_2012:netflow,
+  title={NetFlow.},
+  author={Cisco},
+  year={2012},
+  url="http://www.cisco.com/en/US/prod/collateral/iosswrel/ps6537/ps6555/ps6601/prod_white_paper0900aecd80406232.html"
+}
+@inproceedings{Sflow_2003:sflow,
+  title={Traffic Monitoring using sFlow.},
+  author={sFlow},
+  year={2003}
+}
+@inproceedings{yu_2013:SDN_measurement_opensketch,
+  title={Software Defined Traffic Measurement with OpenSketch.},
+  author={Yu, Minlan and Jose, Lavanya and Miao, Rui},
+  booktitle={NSDI},
+  volume={13},
+  pages={29--42},
+  year={2013}
+}
+
+@INPROCEEDINGS{bandi_2007:JFlow, 
+author={N. Bandi and D. Agrawal and A. El Abbadi}, 
+booktitle={27th International Conference on Distributed Computing Systems (ICDCS '07)}, 
+title={Fast Algorithms for Heavy Distinct Hitters using Associative Memories}, 
+year={2007}, 
+pages={6-6}, 
+keywords={content-addressable storage;invasive software;telecommunication network routing;telecommunication security;associative memory;attack detection;data streams;distributed denial of service attack;heavy distinct hitter;network packet;network processing unit;network router;security attack;ternary content addressable memory;worm attack;Associative memory;Central Processing Unit;Computer crime;Computer science;Computer security;Computer worms;Data security;Hardware;Sampling methods;Stock markets}, 
+doi={10.1109/ICDCS.2007.110}, 
+ISSN={1063-6927}, 
+month={June},}
+
+@ARTICLE{z_shu_2016:TE_SDN_measure_manage, 
+author={Z. Shu and J. Wan and J. Lin and S. Wang and D. Li and S. Rho and C. Yang}, 
+journal={IEEE Access}, 
+title={Traffic engineering in software-defined networking: Measurement and management}, 
+year={2016}, 
+volume={4}, 
+pages={3246-3256}, 
+abstract={As the next generation network architecture, software-defined networking (SDN) has exciting application prospects. Its core idea is to separate the forwarding layer and control layer of network system, where network operators can program packet forwarding behavior to significantly improve the innovation capability of network applications. Traffic engineering (TE) is an important network application, which studies measurement and management of network traffic, and designs reasonable routing mechanisms to guide network traffic to improve utilization of network resources, and better meet requirements of the network quality of service (QoS). Compared with the traditional networks, the SDN has many advantages to support TE due to its distinguish characteristics, such as isolation of control and forwarding, global centralized control, and programmability of network behavior. This paper focuses on the traffic engineering technology based on the SDN. First, we propose a reference framework for TE in the SDN, which consists of two parts, traffic measurement and traffic management. Traffic measurement is responsible for monitoring and analyzing real-time network traffic, as a prerequisite for traffic management. In the proposed framework, technologies related to traffic measurement include network parameters measurement, a general measurement framework, and traffic analysis and prediction; technologies related to traffic management include traffic load balancing, QoS-guarantee scheduling, energy-saving scheduling, and traffic management for the hybrid IP/SDN. Current existing technologies are discussed in detail, and our insights into future development of TE in the SDN are offered.}, 
+keywords={IP networks;computer network management;energy conservation;next generation networks;quality of service;software defined networking;telecommunication scheduling;telecommunication traffic;QoS-guarantee scheduling;TE;control layer;energy-saving scheduling;forwarding layer;hybrid IP-SDN network;network behavior programmability;network parameter measurement;network resource utilization;network traffic management;network traffic measurement;next generation network architecture;packet forwarding behavior;quality of service;routing mechanism;software defined networking;traffic engineering;traffic load balancing;Current measurement;Energy measurement;Network monitoring;Next generatoin networking;Quality of service;Resource management;Software defined networks;Telecommunication network management;Telecommunication traffic;SDN;Software-defined networkin;network management;network measurement;network monitoring;traffic engineering}, 
+doi={10.1109/ACCESS.2016.2582748}, 
+ISSN={2169-3536}, 
+month={},}
+
+@article{ian_2014:a_road_map_sdn,
+title = "A roadmap for traffic engineering in SDN-OpenFlow networks",
+journal = "Computer Networks",
+volume = "71",
+number = "",
+pages = "1 - 30",
+year = "2014",
+note = "",
+issn = "1389-1286",
+doi = "http://dx.doi.org/10.1016/j.comnet.2014.06.002",
+url = "http://www.sciencedirect.com/science/article/pii/S1389128614002254",
+author = "Ian F. Akyildiz and Ahyoung Lee and Pu Wang and Min Luo and Wu Chou",
+keywords = "Software-defined networking",
+keywords = "OpenFlow",
+keywords = "Traffic engineering",
+keywords = "Traffic management",
+keywords = "Traffic analysis",
+abstract = "Software Defined Networking (SDN) is an emerging networking paradigm that separates the network control plane from the data forwarding plane with the promise to dramatically improve network resource utilization, simplify network management, reduce operating cost, and promote innovation and evolution. Although traffic engineering techniques have been widely exploited in the past and current data networks, such as ATM networks and IP/MPLS networks, to optimize the performance of communication networks by dynamically analyzing, predicting, and regulating the behavior of the transmitted data, the unique features of SDN require new traffic engineering techniques that exploit the global network view, status, and flow patterns/characteristics available for better traffic control and management. This paper surveys the state-of-the-art in traffic engineering for SDNs, and mainly focuses on four thrusts including flow management, fault tolerance, topology update, and traffic analysis/characterization. In addition, some existing and representative traffic engineering tools from both industry and academia are explained. Moreover, open research issues for the realization of SDN traffic engineering solutions are discussed in detail."
+}
+
+@inproceedings{kreutz_2013:towards_secure_sdn,
+  title={Towards secure and dependable software-defined networks},
+  author={Kreutz, Diego and Ramos, Fernando and Verissimo, Paulo},
+  booktitle={Proceedings of the second ACM SIGCOMM workshop on Hot topics in software defined networking},
+  pages={55--60},
+  year={2013},
+  organization={ACM}
+}
+
+@article{sterbenz_2010:resilience_survivability,
+title = "Resilience and survivability in communication networks: Strategies, principles, and survey of disciplines",
+journal = "Computer Networks",
+volume = "54",
+number = "8",
+pages = "1245 - 1265",
+year = "2010",
+note = "Resilient and Survivable networks",
+issn = "1389-1286",
+doi = "http://dx.doi.org/10.1016/j.comnet.2010.03.005",
+url = "http://www.sciencedirect.com/science/article/pii/S1389128610000824",
+author = "James P.G. Sterbenz and David Hutchison and Egemen K. Çetinkaya and Abdul Jabbar and Justin P. Rohrer and Marcus Schöller and Paul Smith",
+keywords = "Communication network",
+keywords = "Future Internet resilience",
+keywords = "Fault tolerance",
+keywords = "Survivability",
+keywords = "Disruption tolerance",
+keywords = "Dependability",
+keywords = "Reliability",
+keywords = "Availability",
+keywords = "Security",
+keywords = "Performability",
+keywords = "Critical infrastructure",
+keywords = "Defence",
+keywords = "Defense",
+keywords = "Detection",
+keywords = "Remediation",
+keywords = "Recovery",
+keywords = "Restoration",
+keywords = "Diagnosis",
+keywords = "Refinement",
+keywords = "Metrics",
+abstract = "The Internet has become essential to all aspects of modern life, and thus the consequences of network disruption have become increasingly severe. It is widely recognised that the Internet is not sufficiently resilient, survivable, and dependable, and that significant research, development, and engineering is necessary to improve the situation. This paper provides an architectural framework for resilience and survivability in communication networks and provides a survey of the disciplines that resilience encompasses, along with significant past failures of the network infrastructure. A resilience strategy is presented to defend against, detect, and remediate challenges, a set of principles for designing resilient networks is presented, and techniques are described to analyse network resilience."
+}
+
+@INPROCEEDINGS{e_santos_2014:research_resilience_sdn, 
+author={L. E. Santos and M. Curado and M. Vieira}, 
+booktitle={2014 IEEE International Symposium on Software Reliability Engineering Workshops}, 
+title={A Research Agenda for Benchmarking the Resilience of Software Defined Networks}, 
+year={2014}, 
+pages={168-173}, 
+abstract={Software Defined Networking (SDN) has recently emerged as a hot topic deserving strong interest both from academia and industry. The change it advises of logically centralizing the overall network control on software platforms and applications, turns networks more and more into software-based systems. Such paradigm shift enables to build more manageable, agile and smarter data communication infrastructures. Despite the interest it is deserving on a multitude of physical and virtualized infrastructures, currently there are no systematic approaches of characterizing and comparing alternative SDN-based solutions regarding their resilience -- a characteristic of utmost importance on such critical environments. In this paper we present a tentative path to bridge this gap, by proposing a research agenda to advance resilience benchmarks for SDNs. We believe that with such class of tools and methodologies, researchers, developers and practitioners will become in a better position to advance the area and take more informed decisions.}, 
+keywords={software defined networking;software reliability;virtualisation;SDN;data communication infrastructures;network control centralization;resilience benchmarking;software defined networking;Benchmark testing;Context;Control systems;Measurement;Protocols;Resilience;Software defined networking;Resilience Assessment;Resilience Benchmarking;Software Defined Networking}, 
+doi={10.1109/ISSREW.2014.22}, 
+month={Nov},}
+
+@ARTICLE{herrera_2016:nfv_survey, 
+author={J. d. J. Gil Herrera and J. F. Botero Vega}, 
+journal={IEEE Latin America Transactions}, 
+title={Network Functions Virtualization: A Survey}, 
+year={2016}, 
+volume={14}, 
+number={2}, 
+pages={983-997}, 
+abstract={New and different trends in networks have been promoted in recent years, among these, Network Functions Virtualization (NFV) has emerged as an initiative from the industry (manufacturers and network operators) in order to increase the flexibility of deployment and integration of new network services within operator's networks. This is achieved through the implementation of network functions such as firewalls, encryption, filtering, load balancing, among others, via software modules. The idea is to avoid using devices based in specific hardware appliances and increase return on investment. Transforming network functions in software allows to run them on different general purpose equipment that could be located in a variety of telecommunications infrastructure, including data centers, network nodes, and even in end-user facilities, also such network functions can be moved or migrated from one equipment to another easily without the need to install new specialized hardware. This article presents a state of the art on network functions virtualization, also it proposes a classification of the main projects that are working under this paradigm. Finally, use cases and future challenges in this area are discussed.}, 
+keywords={computer centres;investment;software defined networking;virtualisation;SDN;data center;device based in-specific hardware;end-user facilities;general purpose equipment;network function implementation;network function virtualization;network node;network service deployment flexibility;return on investment;telecom industry;telecom infrastructure;virtual network function;Electronic mail;Hardware;Internet;Software;Virtualization;NFV & SDN;VNF-FG;Virtual Network embedding;Virtual Networks;Virtualization;Virtualized Datacenter}, 
+doi={10.1109/TLA.2016.7437249}, 
+ISSN={1548-0992}, 
+month={Feb},}
+
+@ARTICLE{nunes_2014:surve_sdn_ppf, 
+author={B. A. A. Nunes and M. Mendonca and X. N. Nguyen and K. Obraczka and T. Turletti}, 
+journal={IEEE Communications Surveys Tutorials}, 
+title={A Survey of Software-Defined Networking: Past, Present, and Future of Programmable Networks}, 
+year={2014}, 
+volume={16}, 
+number={3}, 
+pages={1617-1634}, 
+abstract={The idea of programmable networks has recently re-gained considerable momentum due to the emergence of the Software-Defined Networking (SDN) paradigm. SDN, often referred to as a "radical new idea in networking", promises to dramatically simplify network management and enable innovation through network programmability. This paper surveys the state-of-the-art in programmable networks with an emphasis on SDN. We provide a historic perspective of programmable networks from early ideas to recent developments. Then we present the SDN architecture and the OpenFlow standard in particular, discuss current alternatives for implementation and testing of SDN-based protocols and services, examine current and future SDN applications, and explore promising research directions based on the SDN paradigm.}, 
+keywords={protocols;software radio;telecommunication network management;OpenFlow standard;SDN-based protocols;network management;network programmability;programmable networks;software-defined networking;Computer architecture;Hardware;Internet;Protocols;Software;Switches;Software-Defined Networking;control plane;data plane;programmable networks;survey;virtualization}, 
+doi={10.1109/SURV.2014.012214.00180}, 
+ISSN={1553-877X}, 
+month={Third},}
+
+@ARTICLE{kreutz_2015:sdn_comprehensive_survey, 
+author={D. Kreutz and F. M. V. Ramos and P. E. Veríssimo and C. E. Rothenberg and S. Azodolmolky and S. Uhlig}, 
+journal={Proceedings of the IEEE}, 
+title={Software-Defined Networking: A Comprehensive Survey}, 
+year={2015}, 
+volume={103}, 
+number={1}, 
+pages={14-76}, 
+keywords={IP networks;application program interfaces;computer network management;computer network reliability;computer network security;software defined networking;telecommunication network routing;telecommunication traffic;API;IP networks;SDN controllers;SDN infrastructure;SDN position analysis;bottom-up-layered approach;carrier transport networks;cloud providers;control planes;control platform design;cross-layer problems;data planes;debugging;dependability;digital society;hardware infrastructure;logical network control centralization;network applications;network control logic separation;network control problem;network management;network operating systems;network policies;network program;network programming languages;network reconfiguration;network virtualization layers;northbound application programming interface;performance analysis;resiliency analysis;routers;scalability analysis;security analysis;software-defined networking;southbound application programming interface;standardization activities;switch platform design;switching hardware;traffic forwarding;troubleshooting;vertically integrated networks;Communication networks;Computer networks;Control systems;IP networks;Software defined networking;Virtualization;Carrier-grade networks;OpenFlow;dependability;flow-based networking;network hypervisor;network operating systems (NOSs);network virtualization;programmable networks;programming languages;scalability;software-defined environments;software-defined networking (SDN)}, 
+doi={10.1109/JPROC.2014.2371999}, 
+ISSN={0018-9219}, 
+month={Jan},}
+
+@inproceedings{Klein_2013:of_omnet,
+ author = {Klein, Dominik and Jarschel, Michael},
+ title = {An OpenFlow Extension for the OMNeT++ INET Framework},
+ booktitle = {Proceedings of the 6th International ICST Conference on Simulation Tools and Techniques},
+ series = {SimuTools '13},
+ year = {2013},
+ isbn = {978-1-4503-2464-9},
+ location = {Cannes, France},
+ pages = {322--329},
+ numpages = {8},
+ url = {http://dl.acm.org/citation.cfm?id=2512734.2512780},
+ acmid = {2512780},
+ publisher = {ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering)},
+ address = {ICST, Brussels, Belgium, Belgium},
+ keywords = {INET, OMNeT++, OpenFlow, SDN},
+}
+
+@article{anderson_da_silva_2015:resilience_sdn_survey,
+title = "Resilience support in software-defined networking: A survey",
+journal = "Computer Networks",
+volume = "92",
+number = "",
+pages = "189 - 207",
+year = "2015",
+note = "",
+issn = "1389-1286",
+doi = "http://dx.doi.org/10.1016/j.comnet.2015.09.012",
+url = "http://www.sciencedirect.com/science/article/pii/S1389128615003229",
+author = "Anderson Santos da Silva and Paul Smith and Andreas Mauthe and Alberto Schaeffer-Filho",
+keywords = "Software-defined networking",
+keywords = "Network resilience",
+keywords = "OpenFlow",
+keywords = "Network challenges",
+abstract = "Software-defined networking (SDN) is an architecture for computer networking that provides a clear separation between network control functions and forwarding operations. The abstractions supported by this architecture are intended to simplify the implementation of several tasks that are critical to network operation, such as routing and network management. Computer networks have an increasingly important societal role, requiring them to be resilient to a range of challenges. Previously, research into network resilience has focused on the mitigation of several types of challenges, such as natural disasters and attacks. Capitalizing on its benefits, including increased programmability and a clearer separation of concerns, significant attention has recently focused on the development of resilience mechanisms that use software-defined networking approaches. In this article, we present a survey that provides a structured overview of the resilience support that currently exists in this important area. We categorize the most recent research on this topic with respect to a number of resilience disciplines. Additionally, we discuss the lessons learned from this investigation, highlight the main challenges faced by SDNs moving forward, and outline the research trends in terms of solutions to mitigate these challenges."
+}
+
+@inproceedings{Sterbenz_2013:taxonomy_n, 
+author={E. K. Çetinkaya and J. P. G. Sterbenz}, 
+booktitle={2013 9th International Conference on the Design of Reliable Communication Networks (DRCN)}, 
+title={A taxonomy of network challenges}, 
+year={2013}, 
+pages={322-330}, 
+keywords={Internet;failure analysis;taxation;telecommunication services;Internet architectures;communication networks;failure service;taxonomy;Communication networks;Delays;Earthquakes;Internet;Protocols;Taxonomy;Terrorism;Resilience;attack;challenge;dependability;disaster;disruption tolerance;diversity;error;failure;fault;performability;redundancy;security;survivability}, 
+month={March}
+}
+
+@Article{Jararweh_2015:sdn_iot,
+author="Jararweh, Yaser
+and Al-Ayyoub, Mahmoud
+and Darabseh, Ala'
+and Benkhelifa, Elhadj
+and Vouk, Mladen
+and Rindos, Andy",
+title="SDIoT: a software defined based internet of things framework",
+journal="Journal of Ambient Intelligence and Humanized Computing",
+year="2015",
+month="Aug",
+day="01",
+volume="6",
+number="4",
+pages="453--461",
+abstract="The internet of things (IoT) represent the current and future state of the Internet. The large number of things (objects), which are connected to the Internet, produce a huge amount of data that needs a lot of effort and processing operations to transfer it to useful information. Moreover, the organization and control of this large volume of data requires novel ideas in the design and management of the IoT network to accelerate and enhance its performance. The software defined systems is a new paradigm that appeared recently to hide all complexity in traditional system architecture by abstracting all the controls and management operations from the underling devices (things in the IoT) and setting them inside a middleware layer, a software layer. In this work, a comprehensive software defined based framework model is proposed to simplify the IoT management process and provide a vital solution for the challenges in the traditional IoT architecture to forward, store, and secure the produced data from the IoT objects by integrating the software defined network, software defined storage, and software defined security into one software defined based control model.",
+issn="1868-5145",
+doi="10.1007/s12652-015-0290-y",
+url="https://doi.org/10.1007/s12652-015-0290-y"
+}

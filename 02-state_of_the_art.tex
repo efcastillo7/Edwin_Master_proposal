@@ -1,0 +1,93 @@
+\section{Background and State-of-the-Art}
+\label{sec:state_of_the_art}
+
+\subsection{Background}
+\label{sub:background}
+
+\subsubsection{Software-Defined Networking - SDN}
+\label{subsub:background-sdn}
+
+SDN represents one of the most accepted and attractive trends in research and industry for defining the architecture of future networks \cite{feamster_2014:road_sdn, lin_2011:survey_programmable_networks}. SDN is a network model that aims to simplify the creation and management of data networks. SDN is mainly characterized by three elements: (i) clear separation of the data and control plane, (ii) centralization of the control function, and (iii) implementation of the control function in software \cite{kreutz_2015:sdn_comprehensive_survey, nunes_2014:surve_sdn_ppf}. The fact of centralizing the control function and implementing it in software implies more flexible, scalable, efficient and adaptable networks to the changing needs of the business and that the latter can be programmed through applications \cite{herrera_2016:nfv_survey}. These unique features lead the SDN architecture to emerge as a promising scenario for efficiently and intelligently implementing monitoring techniques, particularly for TE.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=0.6\columnwidth]{SDN-architecture-overview-transparent}
+    \caption{High-level SDN architecture Source: \cite{onf_2013:sdn_architecture_overview}}
+    \label{fig:sdn_architecture}
+\end{figure}
+
+In \cite{onf_2013:sdn_architecture_overview} Open Networking Foundation (ONF) presents a high-level view of SDN architecture along with its major components. Figure 1 depicts a graphical representation of the components and their interactions. At the bottom, The data plane is composed of network elements specialized in treating packages (forwarding), and it communicates with control plane through Control-Data-Plane-Interface (CDPI) also known as Southbound interfaces (SBI). The OpenFlow protocol \cite{mckeown_2008:openflow, kreutz_2015:sdn_comprehensive_survey, onf_2013:sdn_architecture_overview} is the most well-known open standard SBI because its widespread use by vendors and research. At the top, the Applications Plane (AP) implement and orchestrate the business logic and high-level networking functions, such as routing policies and access control. AP communicates their network requirements to the controller plane through the Northbound Interfaces (NBI). In the middle, the SDN controller translates application requirements and exercises low-level control over network elements, providing relevant information to SDN applications. In addition, recent investigations have considered a Management Plane orthogonal to the whole SDN architecture for conducting integrated network management \cite{ESTRADASOLANO_2017:CIM_model}.
+
+\subsubsection{Traffic Engineering}
+\label{subsub:background-te}
+
+Traffic Engineering is the process in charge of controlling how traffic flows through the network, using dynamic analysis, prediction and behavior regulation of transmitted data \cite{feamster_2014:road_sdn, awduche_2002:overview_ti, wang_2008:overview_routing_ti, xiao_2000:ti_mpls}. TE uses the methods for measuring and managing network traffic and designs better routing mechanisms to guide and schedule network traffic with aim to optimize the traffic performance and network resource utilization \cite{shu_2016:traffic_measurement_management}. This optimization requires providing appropriate traffic requirements (e.g., throughput, delay, packet loss) while effectively in terms of cost and reliability utilizing network resources (e.g., bandwidth).
+
+TE focuses mainly on four approaches \cite{ian_2014:a_road_map_sdn}: Flow Management, Fault Tolerance, Topology Update, and Traffic Analysis/Characterization. First, maps and controls the traffic flows in the network for optimizing the routing function to steer traffic (from ingress nodes to egress nodes) in the most effective way (\textit{e.g.}, looks for ways to avoid network overhead and provide trade-offs between load balancing and latency). Second refers to ensuring network reliability by providing mechanisms that enhance network integrity and by embracing policies emphasizing network survivability (\textit{e.g.}, seeks to ensure the immediate recovery of the network when a failure occurs in any of its nodes). Third, the Topology Update involves managing the capacity of the network to carry out planned changes (\textit{e.g.}, aims to update the policies of the network in real time and ensure their application in each flow). Last but not least, traffic Analysis/Characterization deals with monitoring the performance of the network and verify the compliance with network performance goals to evaluate and debug the effectiveness of the applied traffic engineering methods (\textit{e.g.}, focuses on mechanisms for monitoring the network, debugging errors, fault detection, data collection, etc.).
+
+Traffic measurement is a prerequisite for traffic management. As part of the Analysis/Characterization approach, traffic measurement is responsible for collecting, monitoring and analyzing real-time network traffic information
+
+%Monitoring is crucial for network management. The management applications require accurate and timely statistics on network resources at different aggregation levels (such as flow, packet and port) [34]. The flow-based programmable networks, such as SDNs, must continuously monitor performance metrics, such as link utilization, in order to quickly adapt forwarding rules in response to changes in workload. . a road map
+%falta complementar
+
+
+\subsubsection{Data Mining}
+\label{subsub:background-dm}
+Data mining is the knowledge discovery and autonomously extracting useful information from large data stores or sets. The patterns or rules detected by data mining techniques can be used for non-trivial prediction of new information. In non-trivial prediction, information implicitly presented in the data is discovered. DM is an interdisciplinary field that covers areas of statistics, machine learning, data management and databases, pattern recognition, artificial intelligence, and other areas \cite{Dua_2011:DM_ML_Cybersecurity, Dean_2014:BD_DM_ML}. All of these areas relate to particular aspects of data analysis, so they have a lot in common, but each one also has its problems and types of solution.
+
+%\begin{figure}[!ht]
+%    \centering
+%    \includegraphics[width=1\columnwidth]{multidisciplinary_dm}
+%    \caption{Multidisciplinary Nature of Data Mining. Source: \cite{Dean_2014:BD_DM_ML}}
+%    \label{fig:multidisciplinary_dm}
+%\end{figure}
+
+Data mining has been used in many domains, including agriculture \cite{efcastillo_2016:agriculture, efcastillo_2015:agriculture, ZHANG_2005:agriculture}, economics \cite{kim_2004:usefulness, nielsen_2004:local}, cybersecurity \cite{Dua_2011:DM_ML_Cybersecurity, Thuraisingham_2003:ciber}, among others. There are two types of data mining methods: supervised and unsupervised. Supervised data mining techniques require a set of examples (instances), commonly known as training data, which are used to define the behavior of the algorithm. The training data consists of a set of attributes and an objective variable (also called class), which is intended to be classified or predicted. Typical examples of supervised mining are classification and prediction. Unsupervised data mining explores the structure of a non-tagged data set (without target variable). This method reveals unexpected characteristics (patterns) and generates new groups (each with different identifiable properties) that obey different patterns. Common examples of unsupervised mining are clustering and mining associative rules.
+
+\subsection{Traffic Engineering for Network Monitoring}
+\label{sub:te_in_monitoring}
+In the area of IP networks, TE emphasizes the network monitoring under the traditional mechanisms (complex low-level communication protocols, distributed and proprietary network devices) where fine-grained control of traffic monitoring cannot be achieved, and flexibility and extensibility are hard to improve. Recent research efforts have defined solutions to improve this day-to-day approach, while others have harnessed the power of SDN to propose centralized solutions for such control and management, including those that apply Data Mining. In this section, we present some approaches to network monitoring found in the literature.
+
+\subsubsection{Traditional Solutions}
+Tcpdump \cite{tcpdump} is a famous tool that allows one to look closer at network packets and make some statistical analysis out of the trace files. Wireshark  \cite{wireshark} adds a user-friendly GUI to Tcpdump and includes many traffic signatures, can be used for accurate, payload-based application identification. Snort  \cite{Roesch_1999:Snort} is a tool for real-time traffic analysis and packet logging, capable of performing content searching/matching and detecting many types of network attacks.  CoralReef \cite{caida}, provides flexible traffic capture, analysis, and report functions. Tstat \cite{Finamore_2010:Tstat} is a passive analysis tool which elaborates tcptrace, and it offers various analysis capabilities with regard to TCP performance metrics, application classification, and VoIP characteristics. 
+
+On the other hand, Cisco NetFlow is a well-known flow monitoring format which uses methods that are installed at network elements as specialized modules. Those modules collect either complete or sampled traffic statistics and send them to a central collector. Another important feature of NetFlow is that its format is not open, and it has been designed only for IPv4 network monitoring \cite{Cisco_2012:netflow}.
+
+SFlow is a proprietary flow sampling method embedded within switches and routers. The sampled information is sent to a central server running software that analyzes and reports on network traffic and provides the ability to continuously monitor application-level traffic flows at wire speed on all interfaces simultaneously \cite{Sflow_2003:sflow}. Sflow, in contrast to the approach used in NetFlow,  the loss of a record does not represent a significant loss of data and doesn't affect the overall accuracy of traffic measurements. 
+
+Another proprietary flow sampling method is JFlow \cite{bandi_2007:JFlow}, which is quite similar to NetFlow. However, these kinds of approaches (store-and-process) present several shortcomings. Firstly, it requires traffic data to be stored and managed for further analysis. This would demand considerable storage space to store the high volume traffic data in a high-speed network environment. Secondly, traffic data are not processed at the time they are produced. So, measurement results cannot be provided in real-time. In addition, these approaches maybe not effective solutions to be applied in SDN systems, such as large-scale data center networks, because of the significantly increased overhead incurred by statistics collection from the whole network at the central controller.
+
+%This may have an impact on time critical network administration tasks, such as abnormal traffic detection and traffic shaping. Therefore, the combination of high-performance traffic collection and real-time data monitoring and analysis is still a challenging target. 
+
+\subsubsection{SDN-based Solutions}
+
+OpenTM \cite{Tootoonchian_2010:opentm} is a query-based monitoring method to estimate the traffic matrix for OpenFlow networks. This method uses built-in features provided in OpenFlow switches to directly and accurately measure the traffic matrix. Subsequently, it uses the routing information learned from the OpenFlow controller to smart choose the switches from which to obtain flow statistics, thus reducing the load on switching elements. It is important to mention that, by measuring network-wide traffic matrix by periodically polling one switch on each flow's, it causes a significant overhead.
+
+FlowSense \cite{Yu_2013:flow_sense}, is a passive push-based monitoring method to analyze control messages between the controller and switches (the network informs the performance changes, rather than query it selves on demand.). It uses the controller messages to monitor and measure network utilization such as the bandwidth consumed by flows traversing the link, without inducing additional overhead. 
+
+In \cite{chowdhury_2014:payless}, authors focus on this trade-off between monitoring accuracy, timeliness, and network overhead. They propose PayLess a monitoring framework for SDN. It provides a flexible RESTful API for flow statistics collection at different aggregation levels. Furthermore, It uses an adaptive statistics collection algorithm that delivers highly accurate information in real-time without incurring significant network overhead. Nevertheless, the monitoring accuracy increases at the cost of increased network overhead.
+
+SWAN \cite{Hong_2013:AHU} utilizes policy rules to allow inter-data center WANs to carry significantly more traffic for higher-priority services while maintaining fairness among similar services. SWAN exploits the global network view enabled by the SDN paradigm to optimize the network sharing policies, which allows WAN to carry more traffic and support flexible network-wide sharing.
+
+In \cite{sgambelluri_2013:of_bsp}, authors modify the OpenFlow architecture to support the protection of segments in networks based on Ethernet. They introduced mechanisms to keep workflows and backups in different priorities, and thus ensure efficient use of network resources when the failed link is recovered.
+
+Kandoo \cite{hassasYeganeh_2012:kandoo} Creates a two-tier hierarchy for controllers: (i) local controllers running local applications as close as possible to the switches, and (ii) a logically centralized controller running globally. A single local controller controls each switch, and each local controller can control multiple switches. The root controller can install flow inputs on the switches of a local controller, delegating the requests in the respective local controller. Kandoo has control channel consumption of order of magnitude lower than normal OpenFlow networks.
+
+BalanceFlow \cite{y_hu_2012:balance_flow} is a controller load balancing architecture for wide-area OF networks, which can partition control traffic load between different controller instances in a more flexible way. All controllers in BalanceFlow maintain their flow-requests information and publish this information periodically through a cross-controller communication system to support load balancing. In BalanceFlow there are two types of controllers, one super controller, and many normal controllers. The super controller is responsible for balancing the load of all controllers, and it detects controller load imbalance when the average number of flow-requests handled by a controller is larger than some threshold of the total flow-requests rate in the network. The threshold is adjustable according to the performance of the super controller, the number of controllers, and the network environment.
+
+\subsubsection{Network Monitoring using Data Mining}
+\label{subsub:related_work-te_using_dm}
+
+The authors in \cite{p_wang_2016:traffic_clasification}, propose a QoS-aware traffic classification framework for software-defined networks, which classifies network traffic into different classes according to the QoS requirements, which provide the crucial information to enable the fine-grained and QoS-aware traffic engineering. This technic is located in the network controller so that real-time, adaptive and accurate traffic classification can be realized by exploiting the superior computing capacity, global visibility and inherent programmability of the network controller. Also, uses deep packet inspection (DPI) and semi-supervised machine learning so that accurate traffic classification can be performed.
+
+\cite{poupart_online_2016} presents an online flow size prediction that uses ML techniques (\textit{e.g.}, NN and Bayesian Networks) to identify elephant flows in real datasets. As metrics, they employ True Positive Rate (TPR) and True Negative Rate (TNR), finding that the Gaussian Process Regression is the more robust method. This approach present two problems from the above SDN-based solution. First, it assumes that the data is centralized, however, as observed in FlowSense, collecting data from the switches to a centralized controller increases traffic overhead. In this case the collection of data exponentially increments the traffic overhead because this approach requires per-packet headers; in addition, it would present delay due to data transmission and processing. 
+
+Silva \cite{silva_2015:identification_selection_traffic}, exposes an architecture to identify, extend, and select sets of flow characteristics derived from native OpenFlow counters. This model uses the Selection/Extraction techniques (\textit{e.g.}, Feature Selection, Principal Component Analysis (PCA) and Genetic Algorithm (GA) features to create a set of exceptional flow characteristics to characterize traffic profiles.
+
+
+
+%Traffic classification [Li and Moore, 2007]
+
+%Learning algorithms for dynamic resource management in virtual networks [Mijumbi et al., 2014]
+
+%Virtual Network Topology reconfiguration based on BDS for traffic prediction [Morales et al., 2016]

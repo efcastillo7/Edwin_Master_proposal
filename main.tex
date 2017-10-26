@@ -1,0 +1,176 @@
+% Distributed under the Apache license, Version v2.0
+% Copyright 2017 Felipe Estrada-Solano <festradasolano at gmail>
+% Based on Keith A. Gillow's OCIAM Thesis lyx files
+% ==============
+% DOCUMENT CLASS
+% ==============
+%\documentclass[11pt,draft]{thesis_proposal-dtm_unicauca} % draft version
+\documentclass[11pt,twoside]{thesis_proposal-dtm_unicauca} % submission version
+% ==============
+% LaTeX PACKAGES
+% ==============
+% -----
+% Color
+\usepackage{color}
+% -----
+% Fonts
+\usepackage{lmodern}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+% -----------
+% Other fonts
+\usepackage{listings}
+\usepackage{verbatim}
+% -------
+% Margins
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=3cm,bmargin=2.5cm,lmargin=3cm,rmargin=2.5cm,headheight=3cm,headsep=1cm}
+% -----------
+% Hyphenation
+\usepackage[american]{babel}
+% -------------
+% Alignment
+\usepackage{array}
+% -------------
+% External PDFs
+\usepackage{pdfpages}
+% ----
+% Math
+\usepackage{amsmath}
+% -------
+% Symbols
+\usepackage{amssymb}
+% --------
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{figures/}} % path(s)
+%\DeclareGraphicsExtensions{.eps} % extension(s)
+% ------------
+% Bibliography
+\usepackage[numbers]{natbib}
+% ------------
+% Period label separation instead of colon
+\usepackage[labelsep=period]{caption}
+% ----------------
+% Hyper-references
+\usepackage[unicode=true, bookmarks=true,bookmarksnumbered=true,bookmarksopen=false, breaklinks=true, pdfborder={0 0 0},backref=page,colorlinks=true]{hyperref}
+% ----------------
+% Table formatting
+\usepackage{array}
+\usepackage{multirow}
+% ===============
+% LaTeX UTILITIES
+% ===============
+% ----------------
+% Hyper-references
+\hypersetup{pdftitle={Links Utilization Prediction in SDN Based on Data Mining}, pdfauthor={Edwin Ferney Castillo Quintero}, colorlinks=true, citecolor=blue, linkcolor=black, urlcolor=green}
+% ----------------
+% Grayscale colors
+% ---------------------------------------------------------------
+% Pages with more than 80% of floats become pure float-only pages
+\renewcommand{\floatpagefraction}{.8}%
+% -----------------------
+% Extra height for tables
+\renewcommand{\arraystretch}{1.6}
+% ==================
+% DOCUMENT UTILITIES
+% ==================
+% -------------
+% Unicauca logo
+\def\logo{{\includegraphics[scale=0.45]{logo_unicauca.pdf}}}
+% ----------------------------
+% Arguments for the cover page
+\title{Intelligent Probing for SDN Monitoring}
+\author{Edwin Ferney Castillo Quintero}
+\degree{Master}
+\program{Telematics Engineering}
+\advisor{Oscar Mauricio Caicedo Rendon}
+\advisordegree{Ph.D.}
+\coadvisor{}
+\coadvisordegree{}
+\lineresearch{Advanced Services of Telecommunications}
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH] \THEYEAR}
+  
+\submitmonth{\monthyeardate\today}
+%\submityear{2017}
+% If no co-advisor, do not comment, just define argument as empty
+%\coadvisor{}
+%\coadvisordegree{}
+\coadvisor{}
+\coadvisordegree{}
+% -----------
+% Hyphenation
+%\catcode`\_=12
+%\lccode`\_`\_
+\hyphenation{}
+% ========
+% DOCUMENT
+% ========
+\begin{document}
+% -----------------------------------------------
+% Build the cover page (generated from arguments)
+\pagenumbering{gobble}
+\maketitle
+% -----------
+% Roman pages
+\begin{romanpages}
+% -----------------
+% Table of contents
+\pdfbookmark{\contentsname}{toc}
+\renewcommand{\contentsname}{\LARGE\centerline{Contents}}
+\tableofcontents{}
+% ---------------
+% List of figures
+%\renewcommand{\listfigurename}{\LARGE\centerline{List of Figures}}-- comentado
+%\listoffigures-- comentado
+% --------------
+% List of tables
+%\renewcommand{\listtablename}{\LARGE\centerline{List of Tables}} -- comentado
+%\listoftables -- comentado
+% ---------------
+% End roman pages
+\end{romanpages}
+\pagenumbering{arabic}
+% ------------------------------
+% Paragraph spacing for document
+\setlength{\parskip}{1em}
+% Paragraph spacing for sections in documents
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 4pt minus 2pt}
+% -----------------
+% Problem Statement
+\input{01-problem_statement}
+% ------------
+% State of Art
+%\input{02-state_of_the_art}
+% ----------
+% Hypothesis
+\input{03-hypothesis}
+% ----------------------
+% Research Contributions
+%\input{04-research_contributions}
+% ----------
+% Objectives
+\input{05-objectives}
+% -----------
+% Methodology
+%\input{06-methodology}
+% ------
+% Budget
+%\input{07-budget}
+% ----------------
+% Submission Terms
+%\input{08-submission_terms}
+% ----------
+% References
+\renewcommand\refname{\vskip -15mm}
+\section{References}
+\label{references}
+\small
+\bibliographystyle{ieeetr}
+\bibliography{references}
+% ------------
+\end{document}
